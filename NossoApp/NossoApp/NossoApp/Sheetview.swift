@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct Sheetview: View {
+    
     @Environment(\.dismiss) var presentationMode
+    
     var opcoes = [
         Sugestoes(id: 1, nome: "menino"),
         Sugestoes(id: 2, nome: "menina"),
@@ -16,27 +18,32 @@ struct Sheetview: View {
         Sugestoes(id: 4, nome: "gato"),
         Sugestoes(id: 5, nome: "robo")
     ]
-    @State var nome : String = ""
+    
+    @Binding var nome : String
+    
     var body: some View {
         NavigationStack{
             ZStack{
-                VStack{
+                VStack(alignment: .leading){
                     ForEach(opcoes) { opcao in Button(action: {
-                        Global.ativado = opcao.nome
+                        nome = opcao.nome
                         presentationMode()
                     }, label: {
-                        Image(opcao.nome).resizable().aspectRatio(contentMode: .fill).frame(width: 50, height: 50).clipShape(Circle())
-                        Text(opcao.nome)
+                        HStack{
+                            Image(opcao.nome).resizable().aspectRatio(contentMode: .fill).frame(width: 60, height: 60).clipShape(Circle())
+                            Text(opcao.nome).font(.system(size: 30)).foregroundColor(.white).fontWeight(.semibold)
+                        }.padding()
+                        .frame(width: 250,height: 80, alignment: .leading).background(.orange).cornerRadius(8)
                     })
                     }
                 }
-            }
+            }.frame(maxWidth: .infinity,maxHeight: .infinity).background(Color("violeta"))
         }
     }
 }
 
-struct Sheetview_Previews: PreviewProvider {
-    static var previews: some View {
-        Sheetview()
-    }
-}
+//struct Sheetview_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Sheetview()
+//    }
+//}

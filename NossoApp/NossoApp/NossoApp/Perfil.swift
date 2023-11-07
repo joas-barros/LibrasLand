@@ -26,34 +26,35 @@ struct Perfil: View {
                         ScrollView(.horizontal){
                             HStack(alignment: .center){
                                 ForEach(Array(nickPerfil), id: \.self){letra in VStack{
-                                    Image(letra.uppercased()).resizable().scaledToFit().frame(width: 50, height: 50)
+                                    Image(letra.uppercased()).resizable().scaledToFit().frame(width: 50, height: 50).background(.white)
                                     Text(letra.uppercased()).foregroundColor(.white)
                                 }}
                             }.frame(width: 400, height: 75, alignment: .center)
                         }
                     }
                     HStack{
-                        Text("Escolha seu personagem: ").font(.system(size: 20)).foregroundColor(.white)
-                        Button(fotoPerfil){
+                        Button("Escolha seu personagem: "){
                             showingSheet.toggle()
-                            fotoPerfil = Global.ativado
                         }.sheet(isPresented: $showingSheet){
-                            Sheetview()
-                        }
+                            Sheetview(nome: $fotoPerfil)
+                        }.frame(width: 220, height: 25).background(.orange).cornerRadius(4)
+                        .foregroundColor(.white)
+                        .fontWeight(.semibold)
+                        Text(fotoPerfil).foregroundColor(.white)
                     }
                     HStack{
                         Spacer(minLength: 65)
-                        Text("Email: ").font(.system(size: 20)).foregroundColor(.white)
+                        Text("Email: ").font(.system(size: 20)).foregroundColor(.white).fontWeight(.semibold)
                         TextField("xxxx@xxxx.com", text: $emailPerfil).foregroundColor(.white)
                     }
                     HStack{
                         Spacer(minLength: 65)
-                        Text("Idade: ").font(.system(size: 20)).foregroundColor(.white)
+                        Text("Idade: ").font(.system(size: 20)).foregroundColor(.white).fontWeight(.semibold)
                         TextField("0", value: $idadePerfil, format: .number).foregroundColor(.white)
                     }
                     HStack{
                         Spacer(minLength: 65)
-                        Text("Escola: ").font(.system(size: 20)).foregroundColor(.white)
+                        Text("Escola: ").font(.system(size: 20)).foregroundColor(.white).fontWeight(.semibold)
                         TextField("UFERSA", text: $escolaPerfil).foregroundColor(.white)
                     }
                     
