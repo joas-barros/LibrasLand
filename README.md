@@ -7,7 +7,7 @@
 
 <div>
     <p align="center">
-        <img src="Telas\mapa-interativo.png" height="300" tittle="Mapa Interativo"> 
+        <img src="Telas\mapa-interativo.png" height="400" tittle="Mapa Interativo"> 
     </p>
 </div>
 
@@ -16,7 +16,7 @@
 
 <div>
     <p align="center">
-        <img src="Telas\tema.png" height="300" tittle="Tema"> 
+        <img src="Telas\tema.png" height="400" tittle="Tema"> 
     </p>
 </div>
 
@@ -25,7 +25,7 @@
 
 <div>
     <p align="center">
-        <img src="Telas\chat.png" height="300" tittle="Chat"> 
+        <img src="Telas\chat.png" height="400" tittle="Chat"> 
     </p>
 </div>
 
@@ -34,7 +34,7 @@
 
 <div>
     <p align="center">
-        <img src="Telas\conquistas.png" height="300" tittle="Conquistas"> 
+        <img src="Telas\conquistas.png" height="400" tittle="Conquistas"> 
     </p>
 </div>
 
@@ -43,9 +43,9 @@
 
 <div>
     <p align="center">
-        <img src="Telas\perfil.png" height="300" tittle="Perfil"> 
+        <img src="Telas\perfil.png" height="400" tittle="Perfil"> 
     </p>
 </div>
 
 ## Video de Demonstração
-[![Youtube](https://img.shields.io/badge/Youtube-000?style=for-the-badge&logo=youtube)](https://youtu.be/PyKnYE9-2Ws?si=8sCZqXR33tq4EsSP)
+[![Youtube](https://img.shields.io/badge/Youtube-F00?style=for-the-badge&logo=youtube)](https://youtu.be/PyKnYE9-2Ws?si=8sCZqXR33tq4EsSP)
