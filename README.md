@@ -47,5 +47,20 @@
     </p>
 </div>
 
+## Equipe de desenvolvimento
+
+<div>
+    <p align="center">
+        <img src="Telas\equipe.jpg" height="300" tittle="Perfil"> 
+    </p>
+</div>
+
+[![André](https://img.shields.io/badge/André-000?style=for-the-badge&logo=github)](https://github.com/devAndreLA)
+[![Arthur](https://img.shields.io/badge/Arthur-000?style=for-the-badge&logo=github)](https://github.com/Arthurpeixoto25)
+[![Iza](https://img.shields.io/badge/Iza-000?style=for-the-badge&logo=github)](https://github.com/izalayane)
+[![Joás](https://img.shields.io/badge/Joás-000?style=for-the-badge&logo=github)](https://github.com/joas-barros)
+[![Lucas](https://img.shields.io/badge/Lucas-000?style=for-the-badge&logo=github)](https://github.com/Lucassilv7)
+[![Ryan](https://img.shields.io/badge/Ryan-000?style=for-the-badge&logo=github)](https://github.com/lryanborges)
+
 ## Video de Demonstração
 [![Youtube](https://img.shields.io/badge/Youtube-F00?style=for-the-badge&logo=youtube)](https://youtu.be/PyKnYE9-2Ws?si=8sCZqXR33tq4EsSP)
